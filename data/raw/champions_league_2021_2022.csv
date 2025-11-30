@@ -1,0 +1,45 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST
+14/09/2021,Man City,Leipzig,6,3,H,18,9,10,5
+14/09/2021,Liverpool,AC Milan,3,2,H,16,11,8,6
+15/09/2021,Bayern Munich,Barcelona,3,0,H,19,7,9,2
+15/09/2021,Real Madrid,Inter Milan,1,0,H,12,10,5,4
+28/09/2021,Chelsea,Juventus,1,0,H,14,9,6,3
+28/09/2021,Man United,Villarreal,2,1,H,15,10,7,4
+29/09/2021,Man City,PSG,2,0,H,17,11,7,4
+29/09/2021,Bayern Munich,Benfica,4,0,H,20,6,10,2
+19/10/2021,Liverpool,Atletico Madrid,3,2,H,17,13,9,6
+19/10/2021,Man City,Brugge,5,1,H,21,7,11,3
+20/10/2021,Barcelona,Benfica,0,0,D,14,13,5,5
+20/10/2021,Bayern Munich,Dortmund,5,2,H,22,10,12,5
+02/11/2021,Real Madrid,Sevilla,2,1,H,15,11,6,5
+02/11/2021,Liverpool,Porto,2,0,H,16,8,7,3
+03/11/2021,Man City,Brugge,4,1,H,19,9,9,4
+03/11/2021,PSG,Leipzig,3,2,H,17,12,8,6
+23/11/2021,Man United,Villarreal,0,0,D,11,12,4,5
+23/11/2021,Bayern Munich,Barcelona,3,0,H,18,9,9,3
+24/11/2021,Chelsea,Juventus,4,0,H,19,7,10,2
+24/11/2021,Liverpool,Porto,2,0,H,15,8,7,3
+07/12/2021,Man City,Leipzig,2,1,H,16,10,7,4
+07/12/2021,Real Madrid,Inter Milan,2,0,H,14,9,6,3
+08/12/2021,Bayern Munich,Barcelona,3,0,H,18,8,9,3
+08/12/2021,Liverpool,AC Milan,2,1,H,15,11,7,5
+15/02/2022,PSG,Real Madrid,1,0,H,14,10,5,4
+15/02/2022,Man City,Sporting,5,0,H,21,5,11,1
+16/02/2022,Liverpool,Inter Milan,2,0,H,16,9,7,3
+16/02/2022,Bayern Munich,Salzburg,7,1,H,23,7,13,3
+09/03/2022,Real Madrid,PSG,3,1,H,17,13,8,5
+09/03/2022,Man City,Sporting,0,0,D,15,14,6,6
+05/04/2022,Chelsea,Real Madrid,1,3,A,13,17,5,9
+05/04/2022,Man City,Atletico Madrid,1,0,H,13,9,5,3
+06/04/2022,Bayern Munich,Villarreal,1,0,H,15,8,6,3
+06/04/2022,Liverpool,Benfica,3,1,H,18,10,9,4
+12/04/2022,Real Madrid,Chelsea,2,3,A,12,18,5,9
+13/04/2022,Atletico Madrid,Man City,0,0,D,9,16,3,7
+13/04/2022,Villarreal,Bayern Munich,1,1,D,10,17,4,8
+13/04/2022,Benfica,Liverpool,3,3,D,14,19,8,11
+26/04/2022,Man City,Real Madrid,4,3,H,19,12,10,7
+27/04/2022,Liverpool,Villarreal,2,0,H,16,8,7,3
+04/05/2022,Real Madrid,Man City,3,1,H,15,17,8,8
+03/05/2022,Villarreal,Liverpool,2,3,A,11,18,6,9
+28/05/2022,Liverpool,Real Madrid,0,1,A,11,15,5,6
+

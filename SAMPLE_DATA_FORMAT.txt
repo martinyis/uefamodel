@@ -1,0 +1,89 @@
+================================================================================
+SAMPLE DATA FORMAT - What Your CSV Files Should Look Like
+================================================================================
+
+Your Champions League CSV files should have these columns (or similar):
+
+REQUIRED COLUMNS:
+-----------------
+• Date          - Match date (format: DD/MM/YYYY or YYYY-MM-DD)
+• HomeTeam      - Name of home team
+• AwayTeam      - Name of away team
+• FTHG          - Full Time Home Goals (integer)
+• FTAG          - Full Time Away Goals (integer)
+• FTR           - Full Time Result ('H' = Home win, 'D' = Draw, 'A' = Away win)
+
+OPTIONAL BUT USEFUL:
+--------------------
+• HS            - Home team shots
+• AS            - Away team shots
+• HST           - Home team shots on target
+• AST           - Away team shots on target
+
+EXAMPLE CSV CONTENT:
+--------------------
+
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST
+14/09/2021,Chelsea,Zenit,1,0,H,12,8,5,2
+14/09/2021,Barcelona,Bayern Munich,0,3,A,10,15,4,8
+15/09/2021,Man City,RB Leipzig,6,3,H,18,9,10,5
+15/09/2021,PSG,Club Brugge,1,1,D,15,12,6,5
+28/09/2021,Man United,Villarreal,2,1,H,14,8,7,3
+28/09/2021,Juventus,Chelsea,0,1,A,7,12,2,5
+29/09/2021,Real Madrid,Sheriff,1,2,A,11,13,4,6
+19/10/2021,Liverpool,Atletico,3,2,H,16,9,8,4
+
+WHAT THE CODE DOES WITH THIS DATA:
+-----------------------------------
+1. Reads Date, HomeTeam, AwayTeam, FTHG, FTAG, FTR
+2. Calculates team form (recent goals, wins, etc.)
+3. Creates differential features (home strength - away strength)
+4. Builds head-to-head statistics
+5. Trains model to predict FTR (H/D/A)
+
+WHERE TO GET THIS DATA:
+-----------------------
+Football-Data.co.uk: https://www.football-data.co.uk/europem.php
+
+This site provides Champions League data in exactly this format.
+Download multiple seasons (3-5 recommended) for best results.
+
+MINIMUM DATA NEEDED:
+--------------------
+• At least 200-300 matches total
+• Spanning at least 2-3 seasons
+• More data = better model performance
+
+COMMON DATA ISSUES:
+-------------------
+✗ Missing dates → Code will skip those rows
+✗ Missing goals → Code will skip those rows  
+✗ Inconsistent team names → Affects form calculation
+  (e.g., "Man City" vs "Manchester City" vs "Man. City")
+  Solution: Manually standardize team names in CSV if needed
+
+✓ Missing shots data → OK, code will work without it
+✓ Extra columns → OK, code will ignore them
+✓ Different column order → OK, code reads by name not position
+
+DATA FILE NAMING:
+-----------------
+Name your files descriptively, e.g.:
+• champions_league_2019.csv
+• champions_league_2020.csv
+• champions_league_2021.csv
+• E0_2022.csv (Football-Data.co.uk format)
+
+The code will read ALL .csv files in data/raw/ folder.
+
+TESTING WITH SAMPLE DATA:
+-------------------------
+If you want to test the code before getting real data, create a CSV file
+with the format above and at least 50-100 rows of made-up data. The code
+will run, though results won't be meaningful with fake data.
+
+For real results, use actual Champions League data from Football-Data.co.uk!
+
+================================================================================
+
+

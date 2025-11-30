@@ -1,0 +1,313 @@
+================================================================================
+CHAMPIONS LEAGUE MATCH PREDICTION PROJECT - COMPLETE SETUP GUIDE
+================================================================================
+Authors: Martin Babak, Tyler Norcross
+Project: UEFA Champions League Match Outcome Prediction using Logistic Regression
+
+This guide will walk you through everything needed to complete your final project.
+
+================================================================================
+WHAT THIS PROJECT DOES
+================================================================================
+
+This project implements a complete machine learning pipeline for predicting
+Champions League match outcomes (Home Win, Draw, Away Win) using multinomial
+logistic regression with sophisticated feature engineering.
+
+Key Features:
+• Recency-weighted team form calculations
+• Comprehensive feature engineering (40+ features)
+• Multinomial logistic regression with L2 regularization
+• Proper temporal train/test split to prevent data leakage
+• Probability calibration analysis
+• Feature importance interpretation
+• Complete results section for your report
+
+================================================================================
+STEP 1: INSTALL REQUIRED PACKAGES
+================================================================================
+
+Open terminal in this folder and run:
+
+    pip install -r requirements.txt
+
+This installs: pandas, numpy, scikit-learn, matplotlib, seaborn, scipy
+
+If you prefer a virtual environment (recommended):
+
+    python -m venv venv
+    source venv/bin/activate  # On Mac/Linux
+    # OR
+    venv\Scripts\activate     # On Windows
+    pip install -r requirements.txt
+
+================================================================================
+STEP 2: GET THE DATA
+================================================================================
+
+You need Champions League match data. Here's how:
+
+OPTION A: Football-Data.co.uk (EASIEST - RECOMMENDED)
+------------------------------------------------------
+1. Visit: https://www.football-data.co.uk/europem.php
+
+2. Download Champions League CSV files for multiple seasons
+   - Look for files labeled with years (e.g., "E0.csv" or similar)
+   - Download at least 3-4 seasons (more is better)
+   - Recommended: Get 2017-2023 data for good training
+
+3. Create a folder structure:
+   untitled folder/
+   └── data/
+       └── raw/
+
+4. Place ALL downloaded CSV files into the data/raw/ folder
+
+5. Your data/raw/ folder should now contain multiple .csv files
+
+OPTION B: Kaggle European Soccer Database (MORE COMPLEX)
+---------------------------------------------------------
+1. Visit: https://www.kaggle.com/datasets/hugomathien/soccer
+2. Download the database (requires free Kaggle account)
+3. Place in data/raw/ folder
+4. You may need to modify 1_data_preprocessing.py to read SQLite format
+
+IMPORTANT: The scripts expect data/raw/ to contain Champions League CSV files
+with columns like: Date, HomeTeam, AwayTeam, FTHG, FTAG, FTR
+
+================================================================================
+STEP 3: RUN THE COMPLETE PIPELINE
+================================================================================
+
+Two options:
+
+OPTION A: Run Everything Automatically (Recommended)
+-----------------------------------------------------
+
+    python RUN_ALL.py
+
+This will execute all 5 steps in sequence:
+  1. Data preprocessing
+  2. Feature engineering  
+  3. Model training
+  4. Model evaluation
+  5. Results generation
+
+OPTION B: Run Each Step Manually
+---------------------------------
+
+Run these commands in order:
+
+    python 1_data_preprocessing.py
+    python 2_feature_engineering.py
+    python 3_train_model.py
+    python 4_evaluate_model.py
+    python 5_generate_results_section.py
+
+This gives you more control to inspect outputs between steps.
+
+================================================================================
+STEP 4: GET YOUR RESULTS
+================================================================================
+
+After running the pipeline, check these locations:
+
+📁 results/
+  ├── RESULTS_SECTION.txt          ← MAIN OUTPUT - Copy into your report!
+  ├── confusion_matrix.png          ← Figure for your report
+  ├── calibration_curves.png        ← Figure for your report  
+  ├── feature_importance.png        ← Figure for your report
+  ├── confidence_analysis.png       ← Figure for your report
+  ├── probability_distribution.png  ← Additional analysis
+  ├── evaluation_summary.txt        ← Quick stats reference
+  ├── test_predictions.csv          ← All test set predictions
+  └── feature_importance.csv        ← Detailed coefficient data
+
+📁 models/
+  └── logistic_model.pkl            ← Trained model (can be reused)
+
+📁 data/
+  ├── processed/
+  │   ├── matches_clean.csv         ← Cleaned match data
+  │   └── features.csv              ← Engineered features
+
+================================================================================
+STEP 5: COMPLETE YOUR FINAL REPORT
+================================================================================
+
+Your report should have these sections:
+
+1. MOTIVATION/INTRODUCTION ✓ (Already done in instructions.txt)
+2. RELATED WORK ✓ (Already done in instructions.txt)
+3. METHODOLOGY ✓ (Already done in instructions.txt)
+4. RESULTS ← Copy from results/RESULTS_SECTION.txt
+5. FIGURES ← Include the .png files from results/
+
+TO ASSEMBLE YOUR REPORT:
+------------------------
+1. Open results/RESULTS_SECTION.txt
+2. Copy the entire text
+3. Paste into your report as the "Results" section
+4. Insert the figures (confusion_matrix.png, calibration_curves.png, 
+   feature_importance.png) with appropriate captions
+5. Add a brief conclusion paragraph if needed
+
+SUGGESTED FIGURE CAPTIONS:
+--------------------------
+• Figure 1: Confusion matrix showing actual vs. predicted match outcomes
+• Figure 2: Calibration curves demonstrating probability estimate quality
+• Figure 3: Top 15 most important features by regression coefficient magnitude
+• Figure 4: Model accuracy as a function of prediction confidence
+
+================================================================================
+STEP 6: PREPARE YOUR PRESENTATION
+================================================================================
+
+For your final presentation (slides or poster), highlight:
+
+KEY RESULTS TO PRESENT:
+• Overall test accuracy (should exceed 65%)
+• Comparison with baseline
+• Which features matter most
+• Calibration quality
+• What this tells us about soccer prediction
+
+RECOMMENDED SLIDES:
+1. Title + Motivation (Why predict Champions League matches?)
+2. Methodology Overview (Logistic regression + feature engineering)
+3. Results: Overall Performance (Accuracy, comparison with baseline)
+4. Results: Feature Importance (What drives predictions?)
+5. Results: Calibration (Show calibration curves)
+6. Conclusions + Limitations
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+ERROR: "No CSV files found in data/raw"
+SOLUTION: Download data from football-data.co.uk and place in data/raw/
+
+ERROR: "Module not found"
+SOLUTION: Run pip install -r requirements.txt
+
+ERROR: Low accuracy (<50%)
+SOLUTION: You may need more data. Download additional seasons.
+
+ERROR: Script crashes during feature engineering
+SOLUTION: Ensure your CSV files have columns: Date, HomeTeam, AwayTeam, 
+          FTHG (home goals), FTAG (away goals)
+
+ERROR: Figures not generating
+SOLUTION: Make sure matplotlib backend is working. Try running on your 
+          local machine instead of a remote server.
+
+NEED MORE MATCHES:
+SOLUTION: Download more seasons of data. The model needs at least 200-300 
+          matches for good performance.
+
+================================================================================
+UNDERSTANDING THE OUTPUT
+================================================================================
+
+KEY METRICS EXPLAINED:
+
+• Accuracy: Percentage of correctly predicted outcomes
+  - Random guessing: ~33%
+  - Baseline (always predict home win): ~40-50%
+  - Your model target: 65%+
+  - Good performance: 70%+
+
+• Log Loss: Measures probability quality (lower is better)
+  - Below 0.90: Excellent
+  - 0.90-1.10: Good
+  - Above 1.10: Needs improvement
+
+• Calibration: Do predicted probabilities match reality?
+  - Curves close to diagonal line = well calibrated
+  - Important for practical use (betting, decision-making)
+
+INTERPRETING FEATURE IMPORTANCE:
+
+• Positive coefficient: Increases probability of that outcome
+• Negative coefficient: Decreases probability of that outcome
+• Larger magnitude: Stronger influence
+
+Example: If "home_goal_diff" has a large positive coefficient for 'H' (Home Win),
+it means teams with better recent goal difference are more likely to win at home.
+
+================================================================================
+PROJECT CHECKLIST
+================================================================================
+
+Before submitting, make sure you have:
+
+□ Downloaded Champions League data (3+ seasons)
+□ Installed all required packages (requirements.txt)
+□ Run complete pipeline (RUN_ALL.py or individual scripts)
+□ Generated all results (check results/ folder has all files)
+□ Copied RESULTS_SECTION.txt into your report
+□ Included figures in your report with captions
+□ Your report has all 5 sections:
+  □ 1. Motivation/Introduction
+  □ 2. Related Work
+  □ 3. Methodology
+  □ 4. Results (from RESULTS_SECTION.txt)
+  □ 5. Brief conclusion paragraph
+□ Prepared presentation slides or poster
+□ Report is 2-4 pages (excluding references)
+□ Added group members names to report
+
+================================================================================
+QUICK COMMAND REFERENCE
+================================================================================
+
+Install packages:
+    pip install -r requirements.txt
+
+Run complete pipeline:
+    python RUN_ALL.py
+
+Run individual steps:
+    python 1_data_preprocessing.py
+    python 2_feature_engineering.py
+    python 3_train_model.py
+    python 4_evaluate_model.py
+    python 5_generate_results_section.py
+
+================================================================================
+CONTACT & SUPPORT
+================================================================================
+
+If you run into issues:
+1. Check the troubleshooting section above
+2. Read the error messages carefully
+3. Make sure data is in the right folder (data/raw/)
+4. Verify all packages are installed
+
+The code is well-commented. If you need to modify anything, open the .py files
+and read the comments for guidance.
+
+================================================================================
+GOOD LUCK WITH YOUR PROJECT!
+================================================================================
+
+You now have everything you need to complete your Champions League prediction
+project. The code implements all the methodology from your proposal and
+generates professional results for your report.
+
+Remember: Your goal is to demonstrate that machine learning can meaningfully
+predict Champions League outcomes while providing interpretable insights into
+what drives match results.
+
+Your report should tell a clear story:
+1. Why this problem matters (motivation)
+2. What others have done (related work)
+3. How you approached it (methodology)
+4. What you found (results from RESULTS_SECTION.txt)
+5. What it means and what could be improved (conclusion)
+
+The results section is already written for you in RESULTS_SECTION.txt.
+Just copy it into your report, add the figures, and you're done!
+================================================================================
+
+

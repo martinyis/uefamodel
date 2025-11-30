@@ -1,0 +1,246 @@
+Class Project: Overview
+
+The goal of the machine learning project is to get hands-on experience in independently defining, analyzing, and executing a machine learning (or data science) project. It is not necessary (but of course allowed) that the project conducts original research in machine learning.
+You can either take an interesting dataset and try to make predictions/inference from it using machine learning techniques that we have covered or, even better, ones that we have not covered. Another option is to take a machine learning method and analyze its behavior, or propose an improvement. At least one aspect of the project should be novel and creative.
+Some sources of relevant datasets are:
+
+https://archive.ics.uci.edu/ml/datasets.php
+https://github.com/nytimes/covid-19-data
+https://data.gov
+https://github.com/CSSEGISandData/COVID-19
+https://www.eddmaps.org/
+https://kaggle.com
+
+Feel free to use piazza to solicit ideas on where to get other datasets.
+For more inspiration and prior work, you may also want to look at some recent machine learning conferences and workshops:
+
+https://neurips.cc/Conferences/2020/Schedule?type=Workshop
+https://icml.cc/virtual/2020/workshops
+
+A good project will be creative and not be just based on a dataset from Kaggle or a similar site. You may use datasets and problems on Kaggle as an inspiration, but then please try to go beyond the problem definition stated on the site. The goal is to try a machine learning project that goes beyond simply running a standard algorithm using a standard dataset.
+Project Report
+
+The overall project deliverable is a brief report that describes the results and provides the appropriate evidence that supports them. Please do not simply include a deluge of plots. Be brief and to the point. Only include the most relevant evidence. The reports can be prepared using a quarto notebook, LaTeX, Jupyter, or any other typesetting environment (or even MS Word if you'd like). Projects can be done individually or in groups of 1-5 people.
+The completed report should be up to 4 pages long (excluding references) and succinctly describe the problem, the motivation, and the results. The expectations on the quality and length of the work grows linearly with the number of students involved in the group. A short 2-page report is better than a 4-page report that does not highlight the importance of the findings.
+There are many ways to structure the report, but a great report will have content that resembles a workshop paper. The following paper is a good example:
+https://www.climatechange.ai/papers/neurips2020/6/paper.pdf
+Deliverables
+
+To make it easier to make incremental progress and to get feedback on your ideas, the project will include a sequence of deliverables culminating with the final report and a short presentation. The intermediate deliverable will be graded as pass fail, with any good faith effort counting for pass. You may change your to any extent that you would like based on the feedback that you get from the intermediate deliverables.
+1. Motivation/Introduction
+
+Which addresses these issues:
+
+What is the problem?
+Is it prediction or inference?
+Is it classification or regression?
+Why is the problem important?
+What does success look like?
+What are the data sources that will be used. Is it likely that they will suffice to achieve the goals?
+
+The report should be provided in a form of a free flowing text and not just as answers to the questions above.
+2. Related work
+
+Describe most relevant methods that have been used to solve the problem you are tackling. If the focus of the project is on an application, describe previous work addressing the application. Describe what methods and data sets were used previously. The relevant work should be based in peer-reviewed research papers, books.
+A good resource is the Google Scholar search engine:
+http://scholar.google.com
+3. Methodology
+
+You should answer questions such as:
+
+What is the right metric for success?
+How good does it need to be for the project to succeed? For example, does the prediction error needs to be at most 5%? What about the area under the curve. Argue why.
+Use a test set? Bootstrapping to understand parameter variability?
+How to make sure that the results are valid?
+What kind of methods will be using?
+Will there be any theoretical analysis or improvements that you are proposing?
+
+The report should be provided in a form of a free flowing text and not just as answers to the questions above.
+4. Results
+
+Describe the results of the method. Describe how well the method did in the evaluation and compare with prior work (if applicable). Discuss what the results mean in the context of the problem definition. Is there anything that can be done to improve the results, or are they good enough? What about confidence in the results?
+5. Project presentations and final version
+
+If you are analyzing/improving a ML method, make sure you motivate your analysis, describe the method you chose, and present a clear analysis of your results. The final version will be graded based on the quality of the results and the clarity of the report. The final presentation will either be slides or perhaps in form of posters. The decision will depend on the number of project in the class and other ligistical considerations.
+
+
+The UEFA Champions League is one of the most prestigious and widely watched sporting
+competitions in the world that brings in millions of fans and generates enormous economic
+activity. Predicting the outcomes of matches in this competition has significant value not only for
+fans and analysts but also for betting markets, sports media, and team strategists. Accurate
+match outcome predictions can help identify team strengths and weaknesses and also highlight
+key performance drivers, which can provide deeper insights into the dynamics of competitive
+soccer.
+The problem we want to address is the prediction of match results in the Champions League.
+This is a classification task, where our goal is to predict whether a given match will result in a
+home win, an away win, or a draw. Our project is focused on prediction rather than inference.
+We want to understand the underlying causes of a team’s performance and its importance, so
+our primary objective is to develop a model that achieves high predictive accuracy.
+The motivation for tackling this problem comes from us two soccer players. Soccer matches are
+influenced by a wide range of factors such as team strength, player performance, recent form,
+and tactical styles. A well-constructed machine learning model has the potential to integrate
+these diverse features and provide better forecasts than an educated guess. Second, this
+problem highlights the practical applications of machine learning in real-world domains where
+uncertainty and human factors play a large role.
+Success for this project will be measured by our model’s ability to outperform baseline methods
+such as always predicting the most common outcome (like a home win) or relying solely on
+bookmaker odds. A successful model should demonstrate improved accuracy, as well as
+provide interpretable insights into which features. This includes goals scored, possession
+statistics, or player ratings that are most influential in predicting results.
+For data sources, we will leverage publicly available historical soccer datasets. These include
+the Kaggle European Soccer Database, which contains player ratings, match results, and team
+attributes across multiple seasons, and Football-Data.co.uk, which provides match outcomes,
+betting odds, and performance metrics for European competitions including the Champions
+League. These data sources should provide us with sufficient information to train and evaluate
+models, and still allow us to explore the relative importance of different predictive features.
+By applying machine learning to Champions League match prediction, we want to demonstrate
+both the strengths and limitations of predictive modeling in complex real-world settings. The
+project combines the excitement of sports with the rigor of data science, and hopefully will offer
+an interesting way to explore the capabilities of modern machine learning methods.
+Group Members: Martin Babak, Tyler Norcross
+
+Related Work (Logistic Regression–Focused)
+Soccer outcome prediction via logistic regression has long been a staple in sports analytics,
+largely because of its interpretability, relatively low model complexity, and its ability to yield
+probability estimates (i.e. odds). Below we review notable works that employ logistic regression
+(binary or multinomial) for match result prediction, discuss what they found, and highlight gaps
+or challenges.
+Examples of Logistic Regression in Soccer Prediction
+●
+●
+●
+●
+“Predicting Football Match Results with Logistic Regression”
+This paper applies a logistic regression model to predict home vs. away wins in the
+English Premier League 2015/2016 season, and investigates which match features are
+significant predictors. ResearchGate
+“Technical Performance in the English Premier League”
+Researchers analyze match‐level technical statistics (e.g. shots, passes) via binary
+logistic regression to study how team quality and match location influence win
+probability. ResearchGate
+“Key Performance Indicators Predictive of Success in Soccer”
+This work casts match outcome as a binary variable (win vs not-win) and applies logistic
+regression; they report classification accuracy of ~83.5%. They identify “shots on target”
+and “counterattacks” as influential positive predictors. PMC
+Multinomial Logistic Regression for Three-Outcome Prediction
+Because soccer matches have three possible outcomes (home win, draw, away win),
+many studies use multinomial logistic regression. For example, the GitHub project
+football-prediction-model builds a multinomial logistic model for the English Premier
+League using historical features. GitHub
+Another work analyzing the English Premier League uses multinomial logistic regression
+along with SVM to identify performance indicators influencing match results.
+ResearchGate
+●
+Comparative Studies Including Logistic Regression
+In broader comparative modeling, some works include logistic regression among
+candidate methods. For instance, a study of EPL outcome prediction compares multiple
+models (including logistic regression) under different feature sets and finds moderate
+accuracy (~70 % in multiclass or ~77 % in binary setups) for logistic models.
+ResearchGate
+Another example is an extensive thesis comparing multinomial logistic regression,
+●
+●
+ordinal logistic regression, and other models for English Premier League predictions.
+libres.uncg.edu
+Expected Goals (xG) Modeling via Logistic Regression
+Although not directly outcome prediction, expected goals (xG) is often modeled using
+logistic regression: each shot is treated as a binary event (goal or no goal), and
+shot‐level features feed a logistic model for P(goal). Such xG models are used
+downstream for match outcome inference. Medium+2PLOS+2
+Structured Log-Odds / Bradley-Terry Extensions
+Some more advanced works propose generalizations of logistic regression for
+paired‐competition settings, e.g. structured log-odds models that combine feature-based
+inputs with the framework of Bradley–Terry or Elo. These models behave like logistic
+regression but with extra structure for paired comparison tasks. arXiv
+What Empirical Findings Are Common / What Helps
+From the above literature, several patterns and insights emerge about what works well (or not)
+when using logistic regression in soccer:
+●
+●
+●
+●
+Good performance from relatively simple features
+Variables such as shots on target, goal difference, match location (home/away), recent
+team form, and head-to-head statistics often show up as statistically significant
+coefficients in logistic models. For instance,
+“shots on target” had a consistently positive
+association with win probability in several studies. PMC+1
+Model interpretability is a key advantage
+One of logistic regression’s main virtues is clarity: coefficients can be directly interpreted
+in terms of odds ratios, allowing us to say “a one-unit increase in X multiplies the odds of
+winning by β.
+” This interpretability is prized in domains (like sports) where explanations
+matter.
+Multinomial logistic regression helps for three-way outcomes
+Because draw is a frequent and non-negligible outcome in soccer, multiclass logistic
+models (home/draw/away) are often more realistic than simple binary splits. Many prior
+works adopt this extension. ResearchGate+3cs229.stanford.edu+3GitHub+3
+Regularization / feature selection is often necessary
+Given the modest number of matches (especially in Champions League scale) and
+many potential features, overfitting is a risk. Some works reduce features via selection or
+use penalized logistic regression (L1, L2).
+●
+Temporal validation and avoiding leakage
+Good studies ensure that training/testing splits respect time ordering (i.e. train on prior
+seasons, test on future ones). They avoid using future-match data as input features.
+Limitations, Gaps & Opportunities (Given Logistic Regression Focus)
+Even in the logistic regression–based literature, there are several challenges and open
+possibilities that your project could address:
+●
+●
+●
+●
+●
+●
+●
+●
+Limited predictive power / modest accuracy
+Many logistic models achieve only moderate accuracy (60–80 %, depending on binary
+vs multiclass) and leave substantial uncertainty unexplained.
+Draw class is difficult to model
+The draw outcome is often “noisy” and less signal-rich compared to wins, so logistic
+coefficients for draw predictions may be weak.
+Data sparsity and inconsistency, especially for Champions League
+For international tournaments like the Champions League, fewer matches per season,
+fewer comparable features, and potentially inconsistent recording across years pose
+challenges.
+Feature engineering improvements
+Many prior works use “standard” features (goals, shots, averages). You can innovate by
+exploring more refined features: match stage (group vs knockout), distance traveled,
+player lineups/injuries, managerial changes, fatigue, or momentum effects.
+Time‐decay or recency weighting
+Instead of equally weighting all historical matches, you could use decaying weights so
+that recent performance counts more in logistic regression.
+Hybrid or hierarchical logistic models
+For example, mixing team-level random effects (or mixed models) or multilevel logistic
+structures to account for team-specific baselines.
+Calibration and probabilistic performance
+Beyond accuracy, investigating calibration (how well predicted probabilities match
+empirical frequencies) is often underexplored in the literature.
+Bridging logistic regression and modern ML
+You could compare logistic regression to more complex models (boosting, neural nets)
+but emphasize how much interpretability or simplicity you retain. Or you could attempt to
+improve logistic regression (e.g. via feature transformations, interaction terms, or hybrid
+models) to close the performance gap.
+
+
+
+Success Metrics and Performance Goals
+For this three-way classification problem (home win, draw, away win), we will use multiclass accuracy as our primary metric, measuring the proportion of correctly predicted outcomes. Additionally, we will track log-loss to evaluate the quality of our probability estimates, which is particularly important for sports prediction where probabilistic forecasts are more valuable than hard classifications. A model that assigns reasonable probabilities to the actual outcome demonstrates better understanding than one making confident but incorrect predictions.
+We will establish baselines by comparing against: (1) always predicting the most common outcome (typically home win), and (2) predictions based solely on bookmaker odds if available. We will consider our project successful if we achieve at least 65% multiclass accuracy, representing a substantial improvement over the 33% expected from random guessing and aligning with reported results from the literature showing 60-80% accuracy for logistic models. This threshold demonstrates that our feature engineering adds meaningful predictive value while maintaining interpretability.
+Validation Strategy
+To ensure valid results, we will implement a time-based train-test split that respects the chronological order of matches. We will train on Champions League data from earlier seasons and test on the most recent complete season, simulating realistic prediction scenarios. This temporal validation prevents data leakage, randomly splitting matches from the same season would allow the model to learn contemporaneous patterns that wouldn't be available when predicting future matches.
+We will also perform k-fold cross-validation within our training data (maintaining temporal ordering) to tune the regularization strength for our model. This nested approach prevents overfitting to our test set while providing robust performance estimates.
+Modeling Approach
+Our primary method will be multinomial logistic regression with L2 regularization (Ridge). This choice aligns with the literature and naturally handles three outcomes while remaining interpretable. The regularization helps prevent overfitting given the limited Champions League match data, and the regularization strength will be selected through cross-validation.
+We will engineer features across three main categories:
+Team strength indicators including recent form (goal difference over last 5-10 matches) and historical head-to-head records. Match context, like home/away status and match stage (group vs knockout). Performance statistics including average goals scored/conceded and shots on target from recent matches.
+A key innovation will be recent weighting in our feature, recent matches will receive more weight than older ones when calculating team statistics. For example, a team's average goals scored will emphasize performances from the past month more heavily than those from six months ago.
+Addressing the Draw Challenge
+The literature identifies draw prediction as particularly difficult. We will address this by testing interaction terms between team strength features, hypothesizing that draws are more common when teams are evenly matched. For instance, we might include a feature representing the absolute difference in team strength, rather than just the individual strengths themselves.
+Model Evaluation and Interpretability
+Beyond accuracy, we will conduct feature importance analysis by examining the magnitude and significance of our regression coefficients. This will reveal which features, whether team strength, recent form, or match context drive predictions most strongly. We will also create ablation tests, systematically removing feature groups to quantify their contribution to model performance.
+To assess probability quality, we will evaluate calibration using reliability diagrams: among matches where we predict 60% home win probability, do home teams actually win approximately 60% of the time? This ensures our model can produce trustworthy probability estimates and not just accurate classification for the data.
+Finally, we will compare our logistic regression performance against one more complex method to quantify the accuracy-interpretability tradeoff, and it can also help determine whether our simpler approach remains competitive.
+Summary
+This methodology combines multinomial logistic regression with thoughtful feature engineering. By focusing on recency-weighted features, regularization to prevent overfitting, and careful evaluation of both accuracy and probability calibration, we aim to build a model that achieves strong predictive performance while providing clear insights into Champions League match outcome drivers. Success will be demonstrated through accuracy exceeding 65%, well-calibrated probabilities, and interpretable coefficients that advance understanding of competitive soccer dynamics.

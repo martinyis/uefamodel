@@ -1,0 +1,41 @@
+DATA ACQUISITION INSTRUCTIONS
+==============================
+
+You need to download Champions League match data. Here are your options:
+
+OPTION 1: Football-Data.co.uk (RECOMMENDED - Free & Easy)
+----------------------------------------------------------
+1. Visit: https://www.football-data.co.uk/europem.php
+2. Download CSV files for Champions League (look for "E0.csv" files)
+3. Download multiple seasons (e.g., 2018-2023) for better training data
+4. Save all CSV files in a folder called "data/raw/" in your project directory
+5. Files typically contain: Date, HomeTeam, AwayTeam, FTHG (Full Time Home Goals), 
+   FTAG (Full Time Away Goals), FTR (Full Time Result), plus betting odds
+
+OPTION 2: Kaggle European Soccer Database
+------------------------------------------
+1. Visit: https://www.kaggle.com/datasets/hugomathien/soccer
+2. Download the database (requires Kaggle account - free)
+3. Extract and place in "data/raw/" folder
+4. This contains SQLite database with detailed player ratings and team attributes
+
+RECOMMENDED: Start with Football-Data.co.uk as it's simpler!
+
+DIRECTORY STRUCTURE:
+--------------------
+untitled folder/
+├── data/
+│   ├── raw/              # Place downloaded CSV files here
+│   └── processed/        # Processed data will be saved here (created automatically)
+├── models/               # Trained models (created automatically)
+├── results/              # Plots and analysis (created automatically)
+└── [Python scripts]
+
+MINIMUM DATA NEEDED:
+-------------------
+- At least 3-4 seasons of Champions League data (approximately 250-400 matches)
+- Each CSV should have: Date, HomeTeam, AwayTeam, Home Goals, Away Goals, Result
+
+Once you have the data, run: python 1_data_preprocessing.py
+
+
