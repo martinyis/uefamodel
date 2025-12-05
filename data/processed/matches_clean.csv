@@ -1,0 +1,154 @@
+Season,Date,HomeTeam,AwayTeam,HomeGoals,AwayGoals,Result,HS,AS,HST,AST,GoalDifference,TotalGoals,MatchID
+champions_league_2019_2020,2019-09-17,Bayern Munich,Porto,3,1,H,18,8,8,3,2,4,0
+champions_league_2019_2020,2019-09-17,Real Madrid,Benfica,2,1,H,15,9,7,4,1,3,1
+champions_league_2019_2020,2019-09-18,Barcelona,Dortmund,2,1,H,16,11,6,5,1,3,2
+champions_league_2019_2020,2019-09-18,Man City,Lyon,3,0,H,20,6,9,2,3,3,3
+champions_league_2019_2020,2019-09-24,Liverpool,Chelsea,2,0,H,14,7,6,3,2,2,4
+champions_league_2019_2020,2019-09-24,PSG,Sevilla,1,0,H,12,10,5,4,1,1,5
+champions_league_2019_2020,2019-10-01,Juventus,Atletico Madrid,1,1,D,11,11,4,5,0,2,6
+champions_league_2019_2020,2019-10-01,Ajax,Man United,2,1,H,13,8,6,3,1,3,7
+champions_league_2019_2020,2019-10-22,Bayern Munich,Lyon,2,0,H,17,7,7,2,2,2,8
+champions_league_2019_2020,2019-10-22,Man City,Dortmund,4,2,H,19,9,10,4,2,6,9
+champions_league_2019_2020,2019-10-23,Real Madrid,Barcelona,2,2,D,14,15,6,7,0,4,10
+champions_league_2019_2020,2019-10-23,Liverpool,Man United,3,1,H,16,10,8,4,2,4,11
+champions_league_2019_2020,2019-11-05,Chelsea,Ajax,1,0,H,11,12,4,5,1,1,12
+champions_league_2019_2020,2019-11-05,PSG,Porto,2,1,H,15,8,6,3,1,3,13
+champions_league_2019_2020,2019-11-06,Inter Milan,Dortmund,2,0,H,14,9,7,3,2,2,14
+champions_league_2019_2020,2019-11-06,AC Milan,Benfica,1,1,D,10,11,4,4,0,2,15
+champions_league_2019_2020,2019-11-26,Man City,Barcelona,2,1,H,18,12,8,5,1,3,16
+champions_league_2019_2020,2019-11-26,Atletico Madrid,Liverpool,0,1,A,9,15,3,6,-1,1,17
+champions_league_2019_2020,2019-11-27,Juventus,Chelsea,2,0,H,13,8,6,3,2,2,18
+champions_league_2019_2020,2019-11-27,Bayern Munich,Real Madrid,3,2,H,19,13,9,6,1,5,19
+champions_league_2019_2020,2019-12-10,PSG,Man City,1,2,A,14,17,5,7,-1,3,20
+champions_league_2019_2020,2019-12-10,Liverpool,Bayern Munich,2,1,H,15,14,7,5,1,3,21
+champions_league_2019_2020,2019-12-11,Barcelona,Inter Milan,3,0,H,18,7,9,2,3,3,22
+champions_league_2019_2020,2019-12-11,Dortmund,Ajax,3,1,H,16,10,7,4,2,4,23
+champions_league_2019_2020,2020-02-18,Chelsea,Bayern Munich,0,3,A,8,19,3,10,-3,3,24
+champions_league_2019_2020,2020-02-18,Real Madrid,Man City,1,2,A,11,17,4,8,-1,3,25
+champions_league_2019_2020,2020-02-25,Liverpool,Atletico Madrid,1,0,H,14,9,6,3,1,1,26
+champions_league_2019_2020,2020-02-25,PSG,Dortmund,2,0,H,13,11,6,4,2,2,27
+champions_league_2019_2020,2020-08-07,Bayern Munich,Barcelona,8,2,H,24,8,14,4,6,10,28
+champions_league_2019_2020,2020-08-07,Man City,Real Madrid,2,1,H,17,10,7,4,1,3,29
+champions_league_2019_2020,2020-08-08,Liverpool,PSG,2,0,H,15,9,7,3,2,2,30
+champions_league_2019_2020,2020-08-08,Leipzig,Atletico Madrid,2,1,H,14,11,6,5,1,3,31
+champions_league_2019_2020,2020-08-12,Bayern Munich,Man City,1,0,H,12,13,5,6,1,1,32
+champions_league_2019_2020,2020-08-14,PSG,Leipzig,3,0,H,15,9,8,3,3,3,33
+champions_league_2019_2020,2020-08-23,Bayern Munich,PSG,1,0,H,16,11,7,4,1,1,34
+champions_league_2020_2021,2020-10-20,Chelsea,Sevilla,0,0,D,12,11,4,4,0,0,35
+champions_league_2020_2021,2020-10-20,Man United,PSG,1,3,A,9,16,3,8,-2,4,36
+champions_league_2020_2021,2020-10-21,Dortmund,Porto,2,0,H,14,8,6,3,2,2,37
+champions_league_2020_2021,2020-10-21,Barcelona,Lyon,2,1,H,15,10,6,4,1,3,38
+champions_league_2020_2021,2020-10-28,Real Madrid,Ajax,3,1,H,17,9,8,4,2,4,39
+champions_league_2020_2021,2020-10-28,Liverpool,Man City,2,2,D,13,14,6,7,0,4,40
+champions_league_2020_2021,2020-11-03,Bayern Munich,Chelsea,3,0,H,18,7,9,2,3,3,41
+champions_league_2020_2021,2020-11-03,Juventus,Barcelona,0,2,A,10,15,3,7,-2,2,42
+champions_league_2020_2021,2020-11-04,Man City,Dortmund,3,1,H,19,11,9,5,2,4,43
+champions_league_2020_2021,2020-11-04,Porto,Inter Milan,1,0,H,11,10,4,4,1,1,44
+champions_league_2020_2021,2020-11-24,Liverpool,Atletico Madrid,2,0,H,16,8,7,3,2,2,45
+champions_league_2020_2021,2020-11-24,PSG,Man United,1,2,A,13,15,5,6,-1,3,46
+champions_league_2020_2021,2020-11-25,Real Madrid,Bayern Munich,2,2,D,14,15,6,7,0,4,47
+champions_league_2020_2021,2020-11-25,Ajax,Benfica,2,1,H,14,9,6,4,1,3,48
+champions_league_2020_2021,2020-12-01,Man City,Bayern Munich,1,3,A,12,18,5,9,-2,4,49
+champions_league_2020_2021,2020-12-01,Chelsea,Man United,0,1,A,11,13,4,5,-1,1,50
+champions_league_2020_2021,2020-12-02,Barcelona,Dortmund,1,1,D,13,12,5,5,0,2,51
+champions_league_2020_2021,2020-12-02,Liverpool,Ajax,2,0,H,15,8,7,3,2,2,52
+champions_league_2020_2021,2020-12-09,Bayern Munich,Atletico Madrid,4,1,H,20,7,10,3,3,5,53
+champions_league_2020_2021,2020-12-09,Real Madrid,Inter Milan,2,0,H,14,9,6,3,2,2,54
+champions_league_2020_2021,2021-02-17,Leipzig,Liverpool,0,2,A,8,16,2,8,-2,2,55
+champions_league_2020_2021,2021-02-17,Barcelona,PSG,1,4,A,10,17,4,9,-3,5,56
+champions_league_2020_2021,2021-02-24,Bayern Munich,Man City,2,3,A,16,18,7,9,-1,5,57
+champions_league_2020_2021,2021-02-24,Atletico Madrid,Chelsea,0,1,A,9,14,3,6,-1,1,58
+champions_league_2020_2021,2021-03-10,Man City,Dortmund,2,1,H,17,11,7,5,1,3,59
+champions_league_2020_2021,2021-03-10,Real Madrid,Liverpool,3,1,H,15,13,8,5,2,4,60
+champions_league_2020_2021,2021-04-06,Bayern Munich,PSG,2,3,A,15,17,6,9,-1,5,61
+champions_league_2020_2021,2021-04-06,Porto,Chelsea,0,2,A,8,15,2,7,-2,2,62
+champions_league_2020_2021,2021-04-07,Real Madrid,Liverpool,0,0,D,11,12,4,5,0,0,63
+champions_league_2020_2021,2021-04-07,Man City,Dortmund,2,1,H,16,12,7,5,1,3,64
+champions_league_2020_2021,2021-04-27,Chelsea,Real Madrid,2,0,H,13,10,6,4,2,2,65
+champions_league_2020_2021,2021-04-28,PSG,Man City,1,2,A,12,17,5,8,-1,3,66
+champions_league_2020_2021,2021-05-05,Man City,PSG,2,0,H,15,10,7,4,2,2,67
+champions_league_2020_2021,2021-05-29,Man City,Chelsea,0,1,A,12,14,5,6,-1,1,68
+champions_league_2021_2022,2021-09-14,Man City,Leipzig,6,3,H,18,9,10,5,3,9,69
+champions_league_2021_2022,2021-09-14,Liverpool,AC Milan,3,2,H,16,11,8,6,1,5,70
+champions_league_2021_2022,2021-09-15,Bayern Munich,Barcelona,3,0,H,19,7,9,2,3,3,71
+champions_league_2021_2022,2021-09-15,Real Madrid,Inter Milan,1,0,H,12,10,5,4,1,1,72
+champions_league_2021_2022,2021-09-28,Chelsea,Juventus,1,0,H,14,9,6,3,1,1,73
+champions_league_2021_2022,2021-09-28,Man United,Villarreal,2,1,H,15,10,7,4,1,3,74
+champions_league_2021_2022,2021-09-29,Bayern Munich,Benfica,4,0,H,20,6,10,2,4,4,75
+champions_league_2021_2022,2021-09-29,Man City,PSG,2,0,H,17,11,7,4,2,2,76
+champions_league_2021_2022,2021-10-19,Liverpool,Atletico Madrid,3,2,H,17,13,9,6,1,5,77
+champions_league_2021_2022,2021-10-19,Man City,Brugge,5,1,H,21,7,11,3,4,6,78
+champions_league_2021_2022,2021-10-20,Barcelona,Benfica,0,0,D,14,13,5,5,0,0,79
+champions_league_2021_2022,2021-10-20,Bayern Munich,Dortmund,5,2,H,22,10,12,5,3,7,80
+champions_league_2021_2022,2021-11-02,Real Madrid,Sevilla,2,1,H,15,11,6,5,1,3,81
+champions_league_2021_2022,2021-11-02,Liverpool,Porto,2,0,H,16,8,7,3,2,2,82
+champions_league_2021_2022,2021-11-03,Man City,Brugge,4,1,H,19,9,9,4,3,5,83
+champions_league_2021_2022,2021-11-03,PSG,Leipzig,3,2,H,17,12,8,6,1,5,84
+champions_league_2021_2022,2021-11-23,Bayern Munich,Barcelona,3,0,H,18,9,9,3,3,3,85
+champions_league_2021_2022,2021-11-23,Man United,Villarreal,0,0,D,11,12,4,5,0,0,86
+champions_league_2021_2022,2021-11-24,Chelsea,Juventus,4,0,H,19,7,10,2,4,4,87
+champions_league_2021_2022,2021-11-24,Liverpool,Porto,2,0,H,15,8,7,3,2,2,88
+champions_league_2021_2022,2021-12-07,Man City,Leipzig,2,1,H,16,10,7,4,1,3,89
+champions_league_2021_2022,2021-12-07,Real Madrid,Inter Milan,2,0,H,14,9,6,3,2,2,90
+champions_league_2021_2022,2021-12-08,Bayern Munich,Barcelona,3,0,H,18,8,9,3,3,3,91
+champions_league_2021_2022,2021-12-08,Liverpool,AC Milan,2,1,H,15,11,7,5,1,3,92
+champions_league_2021_2022,2022-02-15,PSG,Real Madrid,1,0,H,14,10,5,4,1,1,93
+champions_league_2021_2022,2022-02-15,Man City,Sporting,5,0,H,21,5,11,1,5,5,94
+champions_league_2021_2022,2022-02-16,Bayern Munich,Salzburg,7,1,H,23,7,13,3,6,8,95
+champions_league_2021_2022,2022-02-16,Liverpool,Inter Milan,2,0,H,16,9,7,3,2,2,96
+champions_league_2021_2022,2022-03-09,Real Madrid,PSG,3,1,H,17,13,8,5,2,4,97
+champions_league_2021_2022,2022-03-09,Man City,Sporting,0,0,D,15,14,6,6,0,0,98
+champions_league_2021_2022,2022-04-05,Chelsea,Real Madrid,1,3,A,13,17,5,9,-2,4,99
+champions_league_2021_2022,2022-04-05,Man City,Atletico Madrid,1,0,H,13,9,5,3,1,1,100
+champions_league_2021_2022,2022-04-06,Bayern Munich,Villarreal,1,0,H,15,8,6,3,1,1,101
+champions_league_2021_2022,2022-04-06,Liverpool,Benfica,3,1,H,18,10,9,4,2,4,102
+champions_league_2021_2022,2022-04-12,Real Madrid,Chelsea,2,3,A,12,18,5,9,-1,5,103
+champions_league_2021_2022,2022-04-13,Benfica,Liverpool,3,3,D,14,19,8,11,0,6,104
+champions_league_2021_2022,2022-04-13,Villarreal,Bayern Munich,1,1,D,10,17,4,8,0,2,105
+champions_league_2021_2022,2022-04-13,Atletico Madrid,Man City,0,0,D,9,16,3,7,0,0,106
+champions_league_2021_2022,2022-04-26,Man City,Real Madrid,4,3,H,19,12,10,7,1,7,107
+champions_league_2021_2022,2022-04-27,Liverpool,Villarreal,2,0,H,16,8,7,3,2,2,108
+champions_league_2021_2022,2022-05-03,Villarreal,Liverpool,2,3,A,11,18,6,9,-1,5,109
+champions_league_2021_2022,2022-05-04,Real Madrid,Man City,3,1,H,15,17,8,8,2,4,110
+champions_league_2021_2022,2022-05-28,Liverpool,Real Madrid,0,1,A,11,15,5,6,-1,1,111
+champions_league_2022_2023,2022-09-06,Bayern Munich,Inter Milan,2,0,H,17,9,7,3,2,2,112
+champions_league_2022_2023,2022-09-06,Man City,Sevilla,4,0,H,20,6,10,2,4,4,113
+champions_league_2022_2023,2022-09-07,Chelsea,AC Milan,1,0,H,13,10,5,4,1,1,114
+champions_league_2022_2023,2022-09-07,Real Madrid,Leipzig,3,2,H,16,12,8,6,1,5,115
+champions_league_2022_2023,2022-09-13,Liverpool,Ajax,2,1,H,15,11,7,5,1,3,116
+champions_league_2022_2023,2022-09-13,Atletico Madrid,Porto,2,1,H,14,10,6,4,1,3,117
+champions_league_2022_2023,2022-09-14,PSG,Juventus,2,1,H,16,11,7,5,1,3,118
+champions_league_2022_2023,2022-09-14,Dortmund,Man City,0,0,D,11,15,4,6,0,0,119
+champions_league_2022_2023,2022-10-05,Bayern Munich,Barcelona,2,0,H,16,9,7,3,2,2,120
+champions_league_2022_2023,2022-10-05,Chelsea,AC Milan,3,0,H,17,8,8,3,3,3,121
+champions_league_2022_2023,2022-10-11,Man City,Bayern Munich,1,1,D,14,15,6,7,0,2,122
+champions_league_2022_2023,2022-10-11,Liverpool,Rangers,2,0,H,15,7,7,2,2,2,123
+champions_league_2022_2023,2022-10-12,Real Madrid,Leipzig,2,0,H,14,10,6,4,2,2,124
+champions_league_2022_2023,2022-10-12,Barcelona,Inter Milan,3,3,D,17,13,9,8,0,6,125
+champions_league_2022_2023,2022-10-25,PSG,Benfica,1,1,D,13,12,5,5,0,2,126
+champions_league_2022_2023,2022-10-25,Bayern Munich,Man United,4,2,H,19,11,10,6,2,6,127
+champions_league_2022_2023,2022-10-26,Real Madrid,Chelsea,2,1,H,15,13,7,6,1,3,128
+champions_league_2022_2023,2022-10-26,Man City,Dortmund,2,1,H,17,11,7,5,1,3,129
+champions_league_2022_2023,2022-11-01,Liverpool,Atletico Madrid,2,0,H,16,9,7,3,2,2,130
+champions_league_2022_2023,2022-11-01,Inter Milan,Barcelona,1,0,H,12,14,5,6,1,1,131
+champions_league_2022_2023,2022-11-02,Chelsea,AC Milan,2,0,H,14,9,6,3,2,2,132
+champions_league_2022_2023,2022-11-02,Bayern Munich,Inter Milan,3,0,H,18,8,9,3,3,3,133
+champions_league_2022_2023,2023-02-14,PSG,Bayern Munich,0,1,A,10,16,3,7,-1,1,134
+champions_league_2022_2023,2023-02-14,Liverpool,Real Madrid,2,5,A,13,18,6,11,-3,7,135
+champions_league_2022_2023,2023-02-15,Man City,Leipzig,7,0,H,22,5,12,1,7,7,136
+champions_league_2022_2023,2023-02-15,Chelsea,Dortmund,0,1,A,11,14,4,6,-1,1,137
+champions_league_2022_2023,2023-03-07,Bayern Munich,PSG,2,0,H,15,11,6,4,2,2,138
+champions_league_2022_2023,2023-03-08,Dortmund,Chelsea,2,0,H,14,10,6,4,2,2,139
+champions_league_2022_2023,2023-03-08,Real Madrid,Liverpool,1,0,H,13,12,5,5,1,1,140
+champions_league_2022_2023,2023-03-08,Leipzig,Man City,1,1,D,10,17,4,8,0,2,141
+champions_league_2022_2023,2023-04-11,Man City,Bayern Munich,3,0,H,18,11,9,4,3,3,142
+champions_league_2022_2023,2023-04-11,Real Madrid,Chelsea,2,0,H,14,10,6,4,2,2,143
+champions_league_2022_2023,2023-04-12,Inter Milan,Benfica,2,0,H,13,9,6,3,2,2,144
+champions_league_2022_2023,2023-04-12,AC Milan,Napoli,1,1,D,11,12,4,5,0,2,145
+champions_league_2022_2023,2023-04-18,Bayern Munich,Man City,1,1,D,14,16,6,7,0,2,146
+champions_league_2022_2023,2023-04-19,Chelsea,Real Madrid,2,0,H,15,11,7,4,2,2,147
+champions_league_2022_2023,2023-04-26,Inter Milan,AC Milan,2,0,H,14,10,6,4,2,2,148
+champions_league_2022_2023,2023-05-09,Man City,Real Madrid,4,0,H,19,9,10,3,4,4,149
+champions_league_2022_2023,2023-05-10,Inter Milan,AC Milan,1,0,H,12,11,5,4,1,1,150
+champions_league_2022_2023,2023-05-17,Real Madrid,Man City,1,1,D,13,16,5,7,0,2,151
+champions_league_2022_2023,2023-06-10,Man City,Inter Milan,1,0,H,14,11,6,4,1,1,152
