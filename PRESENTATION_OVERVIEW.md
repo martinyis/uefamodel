@@ -124,6 +124,7 @@ Martin Babak & Tyler Norcross
 **📸 VISUAL FILE:** `presentation_visuals/presentation_slide_2.png`
 
 **What it shows:**
+
 - Horizontal bar chart showing accuracy scale: 33% (random) → 47.9% (naive baseline) → 65% (target) → 73.1% (our result)
 - Progress bars with different colors showing improvement
 - Icons showing progression from random to targeted approach
@@ -156,6 +157,7 @@ Martin Babak & Tyler Norcross
 **📸 VISUAL:** Create in PowerPoint/Google Slides
 
 **What to create:**
+
 - Simple flowchart with 4 boxes connected by arrows:
   1. **Data** (database icon) → "153 matches"
   2. **Feature Engineering** (gear icon) → "25 features"
@@ -193,6 +195,7 @@ _(Shows exponential decay weighting implementation)_
 **📸 VISUAL FILE:** `presentation_visuals/presentation_slide_4.png`
 
 **What it shows:**
+
 - Exponential decay curve graph
 - X-axis: Match number (1-10, with 1 = most recent)
 - Y-axis: Weight (0 to 1.0)
@@ -224,6 +227,7 @@ _(Shows cross-validation setup with TimeSeriesSplit and hyperparameter grid)_
 **📸 VISUAL FILE:** `presentation_visuals/presentation_slide_5.png`
 
 **What it shows:**
+
 - Timeline/horizontal bar diagram showing temporal split
 - Left section (80%): "TRAINING SET" in blue - labeled "2019-2022 seasons" and "102 matches"
 - Right section (20%): "TEST SET" in orange - labeled "2022-2023 season" and "26 matches"
@@ -249,18 +253,21 @@ _(Shows cross-validation setup with TimeSeriesSplit and hyperparameter grid)_
 - **Away Wins:** 71.9% accuracy
 - **Draws:** 47.8% accuracy _(hardest to predict - consistent with literature)_
 
-**📸 VISUAL FILES:** 
+**📸 VISUAL FILES:**
+
 - `results/confusion_matrix.png` - Confusion matrix heatmap
 - `presentation_visuals/presentation_slide_6_large.png` - Large accuracy display
 
 **What they show:**
 
 **Option 1: Use confusion_matrix.png**
+
 - Two side-by-side confusion matrices (counts and percentages)
 - Shows 3x3 grid (Actual vs Predicted: A/D/H)
 - Blue heatmap showing model predicted all test matches as H (Home win)
 
 **Option 2: Use presentation_slide_6_large.png**
+
 - Large prominently displayed "73.1%" in center
 - Comparison boxes showing:
   - "Baseline: 73.1%"
@@ -295,6 +302,7 @@ _(Shows differential feature creation)_
 **📸 VISUAL FILE:** `results/feature_importance.png`
 
 **What it shows:**
+
 - Horizontal bar chart showing top 15 most important features
 - Y-axis: Feature names (e.g., "points_advantage", "away_matches_played", "goal_diff_advantage")
 - X-axis: Coefficient values (positive and negative)
@@ -328,13 +336,15 @@ When model predicts 60% probability → outcome occurs ~60% of time
 - Trustworthy for decision-making applications
 - Useful for betting analysis, risk assessment
 
-**📸 VISUAL FILES:** 
+**📸 VISUAL FILES:**
+
 - `results/calibration_curves.png` - Calibration curves for each outcome
 - `results/confidence_analysis.png` - Accuracy vs confidence levels
 
 **What they show:**
 
 **calibration_curves.png:**
+
 - Three-panel figure showing calibration for each outcome class (A, D, H)
 - Each panel has:
   - Diagonal reference line (perfect calibration)
@@ -344,6 +354,7 @@ When model predicts 60% probability → outcome occurs ~60% of time
 - Shows how well predicted probabilities match actual outcomes
 
 **confidence_analysis.png:**
+
 - Bar chart showing model accuracy at different confidence levels
 - X-axis: Confidence bins (50-60%, 60-70%, >70%)
 - Y-axis: Accuracy percentage
@@ -380,6 +391,7 @@ When model predicts 60% probability → outcome occurs ~60% of time
 **📸 VISUAL FILE:** `presentation_visuals/presentation_slide_9.png`
 
 **What it shows:**
+
 - Horizontal range chart showing literature benchmark
 - Gray shaded bar representing literature range: 60% to 80%
 - Green star marker at 73.1% (our result)
@@ -429,6 +441,7 @@ _(Shows bootstrap confidence interval calculation - demonstrates statistical rig
 **📸 VISUAL FILE:** `presentation_visuals/presentation_slide_10.png`
 
 **What it shows:**
+
 - Summary dashboard with 4 key metrics in boxes/cards arranged in 2x2 grid
 - Card 1 (top-left): "73.1% Accuracy" with trophy icon 🏆
 - Card 2 (top-right): "+0%" vs Baseline with chart icon 📈
@@ -588,18 +601,18 @@ After running `python generate_presentation_visuals.py`, you'll have:
 
 ### Quick Visual Checklist by Slide:
 
-| Slide | Visual Type      | Source File(s)                                                                                           | Code Screenshot                      | Priority |
-| ----- | ---------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------ | -------- |
-| 1     | Background image | External (Champions League logo from Google)                                                             | -                                    | Low      |
-| 2     | Bar chart        | `presentation_visuals/presentation_slide_2.png`                                                          | -                                    | **HIGH** |
-| 3     | Flowchart        | Create in PowerPoint: 4-box process diagram                                                              | -                                    | Medium   |
-| 4     | Decay curve      | `presentation_visuals/presentation_slide_4.png`                                                          | `2_feature_engineering.py` (44-50)   | **HIGH** |
-| 5     | Timeline         | `presentation_visuals/presentation_slide_5.png`                                                          | `3_train_model.py` (89-117)          | **HIGH** |
-| 6     | Confusion matrix | `results/confusion_matrix.png` OR `presentation_visuals/presentation_slide_6_large.png`                  | -                                    | **HIGH** |
-| 7     | Feature bars     | `results/feature_importance.png`                                                                         | `2_feature_engineering.py` (179-183) | **HIGH** |
-| 8     | Calibration (2)  | `results/calibration_curves.png` + `results/confidence_analysis.png`                                     | -                                    | **HIGH** |
-| 9     | Range chart      | `presentation_visuals/presentation_slide_9.png`                                                          | -                                    | **HIGH** |
-| 10    | Dashboard        | `presentation_visuals/presentation_slide_10.png`                                                         | `4_evaluate_model.py` (265-285) opt. | **HIGH** |
+| Slide | Visual Type      | Source File(s)                                                                          | Code Screenshot                      | Priority |
+| ----- | ---------------- | --------------------------------------------------------------------------------------- | ------------------------------------ | -------- |
+| 1     | Background image | External (Champions League logo from Google)                                            | -                                    | Low      |
+| 2     | Bar chart        | `presentation_visuals/presentation_slide_2.png`                                         | -                                    | **HIGH** |
+| 3     | Flowchart        | Create in PowerPoint: 4-box process diagram                                             | -                                    | Medium   |
+| 4     | Decay curve      | `presentation_visuals/presentation_slide_4.png`                                         | `2_feature_engineering.py` (44-50)   | **HIGH** |
+| 5     | Timeline         | `presentation_visuals/presentation_slide_5.png`                                         | `3_train_model.py` (89-117)          | **HIGH** |
+| 6     | Confusion matrix | `results/confusion_matrix.png` OR `presentation_visuals/presentation_slide_6_large.png` | -                                    | **HIGH** |
+| 7     | Feature bars     | `results/feature_importance.png`                                                        | `2_feature_engineering.py` (179-183) | **HIGH** |
+| 8     | Calibration (2)  | `results/calibration_curves.png` + `results/confidence_analysis.png`                    | -                                    | **HIGH** |
+| 9     | Range chart      | `presentation_visuals/presentation_slide_9.png`                                         | -                                    | **HIGH** |
+| 10    | Dashboard        | `presentation_visuals/presentation_slide_10.png`                                        | `4_evaluate_model.py` (265-285) opt. | **HIGH** |
 
 **Priority Guide:**
 
@@ -806,6 +819,7 @@ python 5_generate_results_section.py
 ## Your Actual Numbers (Memorize These!)
 
 **Main Results:**
+
 - **73.1%** - Your test accuracy
 - **73.1%** - Baseline accuracy (matched baseline)
 - **0%** - Improvement over baseline
@@ -815,16 +829,19 @@ python 5_generate_results_section.py
 - **153** - Total matches (after cleaning)
 
 **Performance by Outcome:**
+
 - **100%** - Home win accuracy (19/19 correct)
 - **0%** - Away win accuracy (0/3 correct, all predicted as H)
 - **0%** - Draw accuracy (0/4 correct, all predicted as H)
 
 **Model Details:**
+
 - **25** - Total engineered features
 - **C=0.001** - Best regularization parameter
 - **60-80%** - Literature range (you're in this range!)
 
 **Template Numbers (if needed for comparison):**
+
 - 68.2% accuracy with larger datasets (290 train, 145 test)
 - 47.9% baseline
 - +42% improvement
